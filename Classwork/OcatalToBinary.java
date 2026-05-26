@@ -28,3 +28,4 @@ public class OcatalToBinary {
         System.out.println(OctalToBinary(n));
     }
 }
+
