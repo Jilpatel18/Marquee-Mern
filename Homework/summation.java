@@ -1,24 +1,25 @@
+
+// package Homework;
 import java.util.Scanner;
 
 public class summation {
 
     public static int[] sumArray(int[] arr1, int[] arr2) {
-    int n = arr1.length;
-    int[] result = new int[n + 1];
+        int n = arr1.length;
+        int[] result = new int[n + 1];
 
-    int carry = 0;
+        int carry = 0;
 
-    for (int i = n - 1; i >= 0; i--) {
-        int sum = arr1[i] + arr2[i] + carry;
-        result[i + 1] = sum % 10;
-        carry = sum / 10;
+        for (int i = n - 1; i >= 0; i--) {
+            int sum = arr1[i] + arr2[i] + carry;
+            result[i + 1] = sum % 10;
+            carry = sum / 10;
+        }
+
+        result[0] = carry;
+
+        return result;
     }
-
-    result[0] = carry;
-
-    return result;
-}
-
 
     public static void main(String[] args) {
 
@@ -37,9 +38,9 @@ public class summation {
             arr2[i] = sc.nextInt();
         }
 
-        int[] res = add(arr1, arr2);
+        int[] res = sumArray(arr1, arr2);
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < res.length; i++) {
             System.out.println(res[i]);
         }
 
