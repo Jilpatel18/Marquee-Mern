@@ -1,0 +1,4 @@
+Array -> array use to store contigious and similar data types .
+int [] arr ; #declaration of array
+int [] brr = {1,2,3,} # Intialization of array
+int [] crr = new int[5] #declaritation of sixe 

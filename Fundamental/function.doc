@@ -1,0 +1,63 @@
+What are function?
+Why do we use function?
+What are component of function?
+Type of scope?
+Functiuon overloading?
+Function overriding?
+Stack and heap memory in function?
+Sequencail flow of function?
+Context of the function?
+Type of function?
+Difference between Parameter and Argument?
+write a program there is two paramenter start and end incli
+
+
+
+
+Ans-1 -> A function is a reusable block of code that performs a specific task.
+ It takes input, processes it, and returns an output. 
+ Functions help to break down complex problems into smaller, manageable pieces, making code easier to read and maintain.
+
+Ans-2 -> We use functions for several reasons:
+1. Reusability: Functions allow us to reuse code, which saves time and effort.
+2. Modularity: Functions help to break down a program into smaller, manageable pieces, making it easier to understand and maintain.
+3. Abstraction: Functions allow us to hide the implementation details and focus on the functionality,
+4. Testing: Functions can be tested independently, which helps to identify and fix bugs more easily.
+
+Ans-3 -> The components of a function typically include:
+1. Function Name: A unique identifier for the function.
+2. Parameters: Values passed to the function for processing.
+3. Function Body: The block of code that performs the actual task.
+4. Return Statement: A statement that sends a value back to the caller.
+
+
+Ans-4 -> There are several types of scope in programming:
+1. Global Scope: Variables declared in the global scope are accessible from anywhere in the program.
+2. Local Scope: Variables declared within a function are only accessible within that function.
+3. Block Scope: Variables declared within a block (e.g., inside loops or conditionals
+) are only accessible within that block.
+4. Function Scope: Variables declared within a function are only accessible within that function, similar to
+
+Ans-5 -> Function overloading is a feature in some programming languages that allows multiple functions to have the same name but different parameters. The correct function to call is determined by the number and types of arguments passed to it. This allows for more flexible and intuitive code, as the same function name can be used for different purposes based on the context of the arguments. Function overloading is commonly used in object-oriented programming languages like C++ and Java.
+
+Ans-6 -> Function overriding is a feature in object-oriented programming where a subclass provides a specific implementation of a method that is already defined in its superclass. The method in the subclass has the same name, return type, and parameters as the method in the superclass. When the method is called on an instance of the subclass, the overridden method in the subclass is executed instead of the one in the superclass. This allows for dynamic method dispatch, enabling polymorphism and allowing subclasses to provide specific behavior while still adhering to a common interface defined by the superclass. Function overriding is a key aspect of inheritance in object-oriented programming.
+
+Ans-7 -> The sequential flow of a function refers to the order in which the statements within a function are executed. When a function is called, the program executes the statements in the function body from top to bottom, following a linear path. If there are any control flow statements (like loops or conditionals), the execution may branch accordingly, but the overall flow remains sequential. After all statements in the function have been executed, the function returns control back to the caller, along with any return value if specified.
+
+Ans-8 -> The context of a function refers to the environment in which the function is executed. This includes the variables, objects, and other resources that are accessible to the function at runtime. The context can affect how the function behaves and what data it can access. For example, in object-oriented programming, the context of a method includes the instance of the class it belongs to, allowing it to access instance variables and other methods. In functional programming, the context may include closures that allow a function to access variables from its enclosing scope. Understanding the context of a function is crucial for writing effective and efficient code.
+
+Stack and heap memory in function:
+In programming, stack and heap are two types of memory used for different purposes when executing functions.    
+1. Stack Memory: The stack is a region of memory that stores local variables, function parameters, and return addresses. When a function is called, a new stack frame is created for that function, which contains its local variables and parameters. The stack operates in a last-in-first-out (LIFO) manner, meaning that the most recently called function's stack frame is the first to be removed when the function returns. Stack memory is typically faster to access than heap memory, but it has limited size.
+2. Heap Memory: The heap is a region of memory used for dynamic memory allocation. When a function needs to allocate memory for objects or data structures that may outlive the function's execution, it uses heap memory. Unlike stack memory, heap memory is not automatically managed and requires explicit allocation and deallocation by the programmer. Heap memory is generally slower to access than stack memory due to its dynamic nature and the need for memory management, but it allows for greater flexibility in terms of the size and lifespan of allocated memory.
+
+Ans-9 -> Types of functions can vary based on programming languages and paradigms, but some common types include:
+1. Built-in Functions: These are functions provided by the programming language itself, such as `print()` in Python or `console.log()` in JavaScript.
+2. User-defined Functions: These are functions created by the programmer to perform specific tasks.
+3. Parameterized Functions: These functions take parameters as input to perform their tasks.
+4. Recursive Functions: These functions call themselves in order to solve a problem.
+5. Non-parameterized Functions: These functions do not take any parameters and perform a specific task.
+
+Ans-10 -> The difference between a parameter and an argument is as follows:
+- Parameter: A parameter is a variable that is defined in the function declaration or definition. It  acts as a placeholder for the value that will be passed to the function when it is called. Parameters are used to specify what kind of input the function expects.
+- Argument: An argument is the actual value that is passed to the function when it is called. Arguments are the real data that the function uses to perform its task. When a function is called, the arguments are assigned to the corresponding parameters in the function definition, allowing the function to operate on the provided data.

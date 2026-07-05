@@ -1,0 +1,45 @@
+# Java build artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# Build directories
+/bin/
+/out/
+/build/
+/target/
+
+# Maven
+/target/
+pom.xml.tag
+
+# Gradle
+/.gradle/
+build/
+
+# IDEs and editors
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Node/Python virtual envs
+node_modules/
+venv/
+__pycache__/
+
+# Others
+*.class
