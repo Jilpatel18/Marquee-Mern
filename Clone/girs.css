@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    justify-content: center;
+    /* display: flex; */
+    align-items: center;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.video-thumbnail-img {
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+}
+
+.info {
+    display: flex;   
+    margin-top: 12px;
+    gap: 12px;
+}
+
+.avatar-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+.title-row {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.title {
+    font-size: 16px;
+    padding-right: 8px;
+    color: black;
+}
+.channel-info {
+    font-size: 14px;
+    color: grey;
+    margin-top: 10px;
+}

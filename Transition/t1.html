@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+        width:100px;
+        height:100px;
+        background-color: red;
+        transition-property: background-color, width;
+        transition-duration: 1s;
+        transition-delay: 0s;
+        /* align-items: center;
+        justify-content: center;
+        display: flex; */
+        border: 5px solid blue;
+        border-radius: 100%;
+        }
+        #box:hover{
+            background-color: yellow;
+            width: 250px;
+            border: 2px solid black;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            outline: none;
+            border-radius: 20px;
+            border: none;
+
+            /* Transition */
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition: all 2s 2s ease-in;
+
+        }
+        button:hover{
+            background-color: aqua;
+            transition-timing-function: ease-in-out(100,1000);
+        }
+        
+       
+    </style>
+</head>
+<body>
+   <button id="box">hello</button>
+    <button type="button">Click Me</button>
+    
+</body>
+</html>

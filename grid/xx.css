@@ -1,0 +1,86 @@
+
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  
+  padding: 40px;
+  width: 90%;
+  display: grid;
+  text-align: center;
+  
+
+ 
+  grid-template-areas:
+    "item1 item1 item2 item3 item4 item4"
+    "item1 item1 item5 item6 item4 item4"
+    "item7 item7 item7 item7 item7 item7"
+    "item8 item9 item9 item9 item9 item10";
+
+  
+  
+  gap: 15px;
+  border: 4px solid black;
+}
+.grid-item {
+    min-height: 100px;
+    border-style: solid;
+    border-width: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item1{
+    border-radius: 100%;
+    border-color: yellow;
+    grid-area: item1;
+}
+.item2{
+    border-color: green;
+    grid-area: item2;
+}
+.item3{
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-color: green;
+    grid-area: item3;
+}
+.item4{
+    border-color: yellow;
+    grid-area: item4;
+}
+.item5{
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-color: green;
+    grid-area: item5;
+}
+.item6{
+    border-color: green;
+    grid-area: item6;
+}
+.item7{
+    border-color: rgb(228, 0, 0);
+    grid-area: item7;
+}
+.item8{
+    border-color: purple;
+    grid-area: item8;
+}
+.item9{
+    border-color: purple;
+    grid-area: item9;
+}
+.item10{
+    border-color: purple;
+    grid-area: item10;
+}
