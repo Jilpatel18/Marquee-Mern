@@ -90,3 +90,4 @@ function MultiplicationTable(num){
     }
 }
 console.log(MultiplicationTable(10))
+
