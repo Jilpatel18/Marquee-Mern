@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="unorderList-1">
+      <li class="items">Item 1</li>
+      <li class="items firstele">Item 2</li>
+      <li class="items">Item 3</li>
+      <li class="items">Item 4</li>
+      <li class="items">Item 5</li>
+      <li class="items">Item 6</li>
+    </ul>
+    <ul id="unorderList-1">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+    <script>
+      // console.log(this.document.getElementById("unorderList-1"));
+      // console.log(this.document.getElementById("unorderList-2"));
+      let items = this.document.getElementsByClassName("items");
+      // Object.values(items).forEach((e1)=>{
+      //     console.log(e1.innerText);
+      // });
+
+      console.log("New function");
+      let allItems = this.document.getElementsByClassName("items");
+      // Object.values(allItems).forEach((e1)=>{
+      //     console.log(e1);
+      // });
+      // console.log(allItems);
+      let d = this.document;
+      // let listname = d.getElementsByName('<ul>')
+    //   console.log(listname);
+      /*
+        4. querySelector Vs querySelectorAll
+            Note: very Effective : allow to select based on classname id complex css selector
+            one
+            querySelector() method allow to select the first element that maches or more CSS Selectors
+            querySelectorAll() method allow to select the all the element that maches one or more CSS Selectors
+        */
+    //    let newitems = d.querySelectorAll('ul li.items')
+    //    Object.values(newitems).forEach((e1)=>{
+    //     console.log(e1);
+    //    })
+    //    console.log(newitems);
+
+       let x = d.querySelector('.firstele')
+       console.log(x)
+       
+    </script>
+  </body>
+</html>

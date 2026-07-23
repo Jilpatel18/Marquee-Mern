@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(14, 240, 217);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.container {
+    padding: 40px;
+    width: 90%;
+    display: grid;
+    text-align: center;
+    background-color: rgb(13, 226, 197);
+    height: 55vh;
+    width: 40vw;
+    box-shadow: 5px 5px rgb(4, 163, 163);
+    grid-template-areas:
+    "b1 b2 b3"
+    "b4 b5 b6"
+    "b7 b8 b9";
+    gap: 10px;
+    border: 2px solid rgb(10, 212, 192);
+    border-radius: 15px;
+}
+
+
+.box{
+    border: 10px;
+    height: 100%;
+    width: 100%;
+    border-color: black;
+    background-color: rgb(16, 228, 225);
+    border-radius: 15px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id ="list">
+        <li class="items">Items 1</li>
+        <li class="items">Items 2</li>
+        <li class="items">Items 3</li>
+    </ul>
+    <script>
+        let newListItem = this.document.createElement('li')
+        newListItem.innerText = 'Listt 4'
+        let list = this.document.getElementById('list')
+        list.appendChild(newListItem)
+        console.log(newListItem)
+
+    </script>
+</body>
+</html>

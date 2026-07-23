@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="list">arrays of fruits</h1>
+
+    <script>
+        const fruits = [];
+
+        //  function addFruit(...newFruits) {
+        //     fruits.push(...newFruits);
+        //     document.querySelector(".list").textContent =
+        //         "fruits are : " + fruits.join(", ");
+        //     console.log(fruits);
+        // }
+        const x = document.querySelector('.list');
+
+        function addFruit(...newFruits) {
+            fruits.push(...newFruits);
+
+            x.innerHTML = 'fruits are : ' + fruits;
+
+            console.log(fruits);
+        }
+
+        addFruit('apple', 'banana', 'mango', 'guava');
+    </script>
+</body>
+</html>

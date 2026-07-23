@@ -1,6 +1,15 @@
 Object().__proto__.sendDepositEmail = function (amount) {
-  console.log(`To ${this.__accountHolderName} Laxman,
+  // return `To ${this.__accountHolderName},\nThis is to inform you that amount of Rs.${amount} is deposited`;
+  console.log(`To ${this.__accountHolderName} Vaghasiya,
     This is to inform you that amount of Rs.${amount} is deposited`);
+};
+
+Object().__proto__.sendWithdrawEmail = function (amount) {
+  return `To ${this.__accountHolderName},\nThis is to inform you that amount of Rs.${amount} is withdrawn`;
+};
+
+Object().__proto__.sendInsufficientFundEmail = function (amount) {
+  return `To ${this.__accountHolderName},\nYou're trying to withdraw Rs.${amount} but your balance is insufficient`;
 };
 
 class Bank {
@@ -37,7 +46,8 @@ class Bank {
     this.balance += Number(amount);
 
     console.log(
-      `Amount of Rs. ${amount} is Deposited by ${this.__accountHolderName}`
+      // `Amount of Rs. ${amount} is Deposited by ${this.__accountHolderName}`
+      this.sendDepositEmail(amount)
     );
   }
   checkBalance() {
@@ -47,18 +57,13 @@ class Bank {
     if (amount !== undefined && amount !== 0) {
       if (this.balance <= 0 || this.balance < amount) {
         console.log('Insufficient Balance');
-        // console.log(InsufficientFundEmail.call(this, amount));
+        console.log(this.sendInsufficientFundEmail(amount));
       } else {
         this.balance -= amount;
         console.log(`Amount Withdrawn : Rs ${amount}`);
         console.log(this);
 
-        let sendEmail = sendWithdrawEmail.bind(
-          this,
-          amount,
-          this.__accountHolderName
-        );
-        console.log(sendEmail());
+        console.log(this.sendWithdrawEmail(amount));
       }
     } else {
       console.log(`Please Enter amount to Withdraw(----AMOUNT-----)`);
@@ -76,16 +81,16 @@ class Bank {
     console.log(`Account Balance = ${Number(balance)}`);
   }
 }
+// Removed helper functions kept as comments for reference.
+// function sendWithdrawEmail(amount, name) {
+//   return `To ${name},
+//     This is to inform you that amount of Rs.${amount} is withdrawn | Available Balance is ${this.balance}`;
+// }
 
-function sendWithdrawEmail(amount, name) {
-  return `To ${name},
-    This is to inform you that amount of Rs.${amount} is withdrawn | Available Balance is ${this.balance}`;
-}
-
-function InsufficientFundEmail(amount) {
-  return `To ${this.accountHolderName},
-    You're trying to withdraw Balance then available Rs .${amount}`;
-}
+// function InsufficientFundEmail(amount) {
+//   return `To ${this.accountHolderName},
+//     You're trying to withdraw Balance then available Rs .${amount}`;
+// }
 
 let obj1 = new Bank('Raj', '5959561000', 'raj45@gmail.com', 522000);
 
